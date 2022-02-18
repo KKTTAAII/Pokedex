@@ -2,10 +2,9 @@ import React from "react";
 import Pokecard from "./Pokecard";
 import "./Pokedex.css";
 
-const Pokedex = ({ pokemons }) => {
+const Pokedex = ({ pokemons, totalScore, isWinner }) => {
   return (
     <div>
-      <h1 className="Pokedex-header">Pokedex</h1>
       <div className="Pokedex-all-pokemon-container">
         {pokemons.map(pokemon => (
           <Pokecard
@@ -17,6 +16,8 @@ const Pokedex = ({ pokemons }) => {
           />
         ))}
       </div>
+      <h2 className="Pokedex-score">Total Score: {totalScore}</h2>
+      {isWinner ? <h2 className="Pokedex-winner">This hand Wins!</h2> : ""}
     </div>
   );
 };

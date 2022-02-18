@@ -1,12 +1,24 @@
-.Pokedex-header {
-    color: #E69A8DFF;
-    text-align: center;
-}
-
 .Pokedex-all-pokemon-container {
     justify-content: center;
     margin: 0 auto;
     width: 70vw;
     display: flex;
     flex-wrap: wrap;
+}
+
+.Pokedex-score {    
+    color: #5B84B1FF;
+    margin: 0;
+}
+
+.Pokedex-winner {
+    border: 2px solid rgb(224, 166, 135);
+    margin:  auto;
+    width: 300px;
+    border-radius: 5px;
+    color: #F95700FF;
+}
+
+.Pokedex-score, .Pokedex-winner {
+    text-align: center;
 }
