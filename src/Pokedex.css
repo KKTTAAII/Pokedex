@@ -1,0 +1,12 @@
+.Pokedex-header {
+    color: #E69A8DFF;
+    text-align: center;
+}
+
+.Pokedex-all-pokemon-container {
+    justify-content: center;
+    margin: 0 auto;
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+}
